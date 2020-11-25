@@ -1,0 +1,101 @@
+.container {
+  max-width: 120rem;
+  width: 90%;
+  padding: 0 4rem;
+  margin: 0 auto; }
+
+.social-networks {
+  display: none; }
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+  .desktop-social-networks {
+    display: none !important; }
+
+  .social-networks {
+    display: inline-block; }
+
+  .nav-toggle {
+    display: none; } }
+.header {
+  min-height: 70px; }
+
+.wrapper {
+  min-height: 60px; }
+  .wrapper .logo {
+    float: left;
+    margin: 0;
+    padding: 9px 0 0 10px; }
+
+.nav-menu {
+  margin: 0;
+  padding: 4px 0 0 0;
+  list-style: none;
+  text-align: right; }
+  .nav-menu li {
+    display: inline-block;
+    position: relative; }
+    .nav-menu li a {
+      display: block;
+      text-align: left;
+      padding: 1rem; }
+  .nav-menu .nav-item .item-dropdown {
+    position: absolute;
+    margin: 0.5rem 0;
+    padding: 0;
+    display: none; }
+    .nav-menu .nav-item .item-dropdown .sub-item a {
+      min-width: 10rem;
+      width: 100%;
+      text-align: left; }
+  .nav-menu .nav-item .item-dropdown .sub-item a {
+    padding-bottom: 1rem; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+    margin: 0 auto; }
+
+  .wrapper {
+    float: inherit; }
+
+  .nav-toggle {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 1rem 0;
+    border: none;
+    outline: none; }
+
+  span.toggle {
+    width: 30px;
+    height: 3px;
+    display: block;
+    margin: 5px 0;
+    border: none;
+    outline: none; }
+
+  .nav-menu {
+    display: none;
+    position: relative;
+    top: 50px; }
+    .nav-menu li {
+      display: block;
+      text-align: left; }
+      .nav-menu li a {
+        text-align: left; }
+    .nav-menu .nav-item .item-dropdown {
+      position: inherit;
+      box-shadow: none; }
+      .nav-menu .nav-item .item-dropdown .sub-item a {
+        width: 100%;
+        margin-left: 1.5rem; }
+    .nav-menu .nav-item i.fas {
+      margin: 0;
+      float: right; } }
+
+/*# sourceMappingURL=dropdown-menu.css.map */

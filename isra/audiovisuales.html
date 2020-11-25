@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cherry Box">
+    <!-- Visit www.cherrybox.la -->
+    <meta name="keywords" content="diseño grafico, branding, marketing digital, audivisual, produccion audiovisual, diseñador grafico, publicidad">
+    <meta name="description" content="Soy diseñador gráfico">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="css/dropdown-menu.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" />
+
+
+    <title> Israel Velis </title>
+</head>
+
+
+<body class="sky-background  animate__animated animate__bounceInRight">
+
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Logo del sitio web">
+                    </a>
+
+                </div>
+                <a class="nav-toggle">
+                    <img src="img/mobile-menu.png" alt="">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item inicio"><a href="index.html">Inicio</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Servicios </a>
+                        <ul class="item-dropdown">
+                            <li class="sub-item"><a href="branding.html">Branding</a></li>
+                            <li class="sub-item"><a href="marketing.html">Marketing Digital </a></li>
+                            <li class="sub-item"><a href="publicidad.html">Publicidad </a></li>
+                            <li class="sub-item"><a href="audiovisuales.html">Audiovisuales</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"> Conctactos </a>
+                    </li>
+
+
+                </ul>
+            </nav>
+            <div class="social-networks">
+                <a href=""> <img src="img/facebook-logo.svg" alt="Enlace de facebook" class="sn-image"> </a>
+                <a href=""> <img src="img/behance.svg" alt="Enlace a behance" class="sn-image"> </a>
+                <a href=""> <img src="img/instagram-logo.svg" alt="Enlace a Instagram" class="sn-image"> </a>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="section section-2 center-elements container">
+        <div class="container center-elements">
+            <div class="two-columns">
+                <div class="column-1 center-elements audiovisuales-2 bg-image">
+                    <div class="element-bg audiovisuales center-elements bg-image">
+                        <h1 class="title-1 title sky-title  ta-c"> Audio <br> Visuales </h1>
+                    </div>
+                </div>
+                <div class="column-2 center-elements">
+                    <p> Disfruto crear <span> experiencias unicas, <br> impactantes y de gran valor.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects-section section center-elements">
+        <div class="projects m-0-a">
+            <div class="project center-elements">
+                <h2 class="title sky-title title-2 ta-c"> Para esos ratos </h2>
+            </div>
+            <div class="project center-elements">
+                <h2 class="title sky-title title-2 ta-c center-elements"> Toyota Extravaganza </h2>
+            </div>
+            <div class="project center-elements">
+                <h2 class="title sky-title title-2 ta-c center-elements"> CBIS: Impulsando el Exito </h2>
+            </div>
+            <div class="project center-elements">
+                <h2 class="title title-2 sky-title ta-c center-elements"> Foto publicitaria </h2>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="section idea center-elements ">
+        <div class="container center-elements ">
+            <h2 class="title-1 title sky-title ta-c "> ¿Cuál es <br> tu idea? </h2>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        $(".nav-toggle ").click(function() {
+            $(".nav-menu ").slideToggle();
+        });
+
+        $(window).resize(function() {
+            if ($(window).width() > 768) {
+                $(".nav-menu ").removeAttr("style ");
+            }
+        });
+
+        $("ul li ").hover(function() {
+            $(this)
+                .children("ul ")
+                .stop()
+                .slideToggle(500);
+        });
+    </script>
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+
+</body>
+
+</html>
